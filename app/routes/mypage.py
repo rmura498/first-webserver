@@ -8,6 +8,6 @@ def mypage():
     user = {'username': 'Maura'}
     students = [
         {'name': 'A', 'id': 1},
-        {'name': 'C', 'id': 111},
+        {'name': 'B', 'id': 111},
     ]
     return render_template('mypage.html', title='mypage', user=user, students=students, greeting="Ciao")
