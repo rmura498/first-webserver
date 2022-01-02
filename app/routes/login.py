@@ -7,5 +7,5 @@ from app.forms import LoginForm
 def login():
     # instantiate a login form
     form = LoginForm()
-    return render_template('login.html',title='Login',
+    return render_template('login.html', title='Login',
                            form=form)
