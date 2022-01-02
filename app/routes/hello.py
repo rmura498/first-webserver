@@ -10,4 +10,4 @@ def index():
         {'name': 'A', 'id': 1},
         {'name': 'C', 'id': 111},
     ]
-    return render_template('index.html', title='Home', user=user, students=students, greeting="Yo")
+    return render_template('index.html', title='Home', user=user, students=students, greeting="Ciao")
