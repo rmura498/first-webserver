@@ -1,11 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 {% for student in students %}
-  <div>
+    <div>
+         {% if greeting %}
+            <h1>{{ greeting }} {{ user.username }}</h1>
+        {% else %}
+            <h1>Hello {{ user.username }}</h1>
+        {% endif %}
+
+    </div>
+<div>
       <p>{{ student.name }} - ID: <b>{{ student.id }}</b></p>
 
 
     </div>
+
 {% endfor %}
 
 {% endblock %}
