@@ -11,3 +11,4 @@ def index():
         {'name': 'C', 'id': 111},
     ]
     return render_template('index.html', title='Home', user=user, students=students, greeting="Ciao")
+

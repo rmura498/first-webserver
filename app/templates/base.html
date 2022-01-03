@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head><title>{{ title }} - Blog</title></head>
-
-         <!-- {% if greeting %}
-            <h1>{{ greeting }} {{ user.username }}</h1>
-        {% else %}
-            <h1>Hello {{ user.username }}</h1>
-        {% endif %}
-        {% block content %}{% endblock %} -->
-   <body>
+    <body>
     <div>
     My Page:
     <a href="/index">Home</a>
     <a href="/login">Login</a>
+    </div>
+    <div>
+         {% if greeting %}
+            <h1>{{ greeting }} {{ user.username }}</h1>
+        {% else %}
+            <h1>Hello {{ user.username }}</h1>
+        {% endif %}
+        {% block content %}{% endblock %}
     </div>
     </body>
 </html>
